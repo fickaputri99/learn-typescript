@@ -9,3 +9,27 @@
  * 
  * display the student data using console.log.
  */
+const student1: { id: string; name: string; age: number; status: "active" | "inactive" | "graduated" } = {
+    id: "ST2026001",
+    name: "Ficka",
+    age: 17,
+    status: "active"
+};
+
+const student2: { id: string; name: string; age: number; status: "active" | "inactive" | "graduated" } = {
+    id: "ST2026002",
+    name: "Vanessa",
+    age: 18,
+    status: "inactive"
+};
+
+const student3: { id: string; name: string; age: number; status: "active" | "inactive" | "graduated" } = {
+    id: "ST2026003",
+    name: "Faza",
+    age: 19,
+    status: "graduated"
+};
+
+console.log(student1);
+console.log(student2);
+console.log(student3);

@@ -10,3 +10,38 @@
  * 
  * display the book data using console.log.
  */
+type Book = {
+    ISBN: string;
+    title: string;  
+    author: string;
+    pages: number;
+    category: "Fiction" | "Non-Fiction" | "Science" | "Horror";
+    available: boolean;
+};
+const book: Book[] = [{
+    ISBN: "978-3-16-148410-0",
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    pages: 180,
+    category: "Fiction",
+    available: true,
+},
+{
+    ISBN: "978-0-987654-32-1",
+    title: "Laskar Pelangi",
+    author: "Andrea Hirata",
+    pages: 534,
+    category: "Fiction",
+    available: false
+},
+{
+    ISBN: "978-0-123456-78-9",
+    title: "Sapiens: A Brief History of Humankind",
+    author: "Yuval Noah Harari",
+    pages: 498,
+    category: "Non-Fiction",
+    available: true
+},
+
+]
+console.log(book); 

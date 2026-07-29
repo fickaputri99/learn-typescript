@@ -9,3 +9,43 @@
  * 
  * display the attendance data using console.log.
  */
+type attendance = {
+    employeeId: string;
+    employeeName: string;
+    date: string;  
+    checkInTime: string; 
+    checkOutTime: string; 
+    totalWorkingHours: number; 
+    isPresent: boolean;
+};
+const attendance: attendance[] = [{
+    employeeId: "EMP-001",
+    employeeName: "Aurel",
+    date: "2026-10-10",
+    checkInTime: "08:00",
+    checkOutTime: "15.30",
+    totalWorkingHours: 7.5,
+    isPresent: true, 
+} ,
+{
+    employeeId: "EMP-002",
+    employeeName: "Faza",
+    date: "2026-10-10",
+    checkInTime: "08:00",
+    checkOutTime: "15.30",
+    totalWorkingHours: 7.5,
+    isPresent: true
+} ,
+    
+{
+    employeeId: "EMP-003",
+    employeeName: "Ficka",
+    date: "2026-10-10",
+    checkInTime: "08:00",
+    checkOutTime: "15.30",
+    totalWorkingHours: 7.5,
+    isPresent: true
+},
+
+]
+console.log(attendance);
