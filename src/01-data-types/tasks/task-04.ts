@@ -44,4 +44,4 @@ const book: Book[] = [{
 },
 
 ]
-console.log(book); 
+console.log(book);

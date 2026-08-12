@@ -32,4 +32,35 @@
  * - Determine the scholarship amount using the ternary operator.
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
- */
+ *  */
+
+const studentName: string = "Alya Putri" ;
+const GPA: number = 3.89;
+const familyIncome: number = 4200000;
+const CompetitionCount: number =  4;
+const Recorddiscilpinary: boolean = false;
+const DocumentsComplate: boolean = true;
+
+const GPARequirement = GPA >= 3.75;
+const IncomeRequirement = familyIncome < 5000000;
+const CompetitionRequirement = CompetitionCount >= 3;
+const DisciplineRequirement = Recorddiscilpinary === false;
+const DocumentsRequirement = DocumentsComplate;
+
+const isEligible =
+    GPARequirement &&
+    IncomeRequirement &&
+    CompetitionRequirement &&
+    DisciplineRequirement &&
+    DocumentsRequirement;
+
+const ScholarshipAmount = isEligible ? 12000000 : 0;
+
+const TotalBudget = 500000000;
+const RemainingBudget = TotalBudget - ScholarshipAmount;
+
+console.log("Student Name:", studentName);
+console.log("Eligible", isEligible);
+console.log("Scholarship Amount:", ScholarshipAmount);
+console.log("Remaining Budget", RemainingBudget);
+ 

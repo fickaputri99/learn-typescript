@@ -43,7 +43,7 @@ const student: Student[] =[  {
 
 },
 {
-  studentName: "Putri"
+  studentName: "Putri",
     studentId: "ST2045331",
     assignmentScore: 80.0,
     midtermScore: 85,

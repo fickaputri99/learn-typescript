@@ -14,3 +14,12 @@
  * Task: Store and display the result in a variable named "isEligible"
 
  */
+const finalScore: number = 5000000;
+const attendance:number = 12;
+const tuitionPaid: boolean = true;
+
+const isEligible =
+    finalScore >= 75 &&
+    attendance >= 90 &&
+    tuitionPaid;
+console.log(isEligible);

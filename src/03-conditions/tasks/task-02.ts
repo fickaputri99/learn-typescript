@@ -1,3 +1,5 @@
+import { constants } from "node:buffer";
+
 /**
  * A company evaluates employees every month.
  * If an employee's performance score is 80 or above, they receive a performance bonus.
@@ -14,3 +16,13 @@
  * 3. Display the evaluation result. If eligible will display "Bonus Approved", 
  * otherwise display "Bonus not approved"
  */
+const employeeName: string = "Dimas Pratama";
+const performanceScore: number = 78;
+
+if (performanceScore >= 80) {
+    console.log("Bonus Approved");
+} else {
+    console.log("Bonus not approved");
+}
+
+

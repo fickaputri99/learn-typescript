@@ -14,6 +14,11 @@
  * - Display the names of students who must revise.
  * - Calculate the class average score.
  */
+type Submission = {
+    student: string
+    submissions: boolean
+    score: number
+}
 
 const submissions = [
     { student: "Alya", submitted: true, score: 92 },
@@ -25,3 +30,48 @@ const submissions = [
     { student: "Gita", submitted: true, score: 90 },
     { student: "Hana", submitted: true, score: 73 }
 ];
+
+let countSubmissionStudent: number = 0
+let countUnSubmissionStudent: number = 0
+let countPassedStudent: number = 0
+let countFailedStudent: number = 0
+let totalScore: number = 0
+let countOfStudent: number = submissions.length
+
+let UnSubmittedName: string []=[]
+let revisionName: string[]=[]
+
+/**Scanning Array */
+for (let index = 0; index < countOfStudent; index++) {
+    /**check if student */ 
+    if(submissions[index].submitted){
+        countSubmissionStudent++
+    }  else {
+        countUnSubmissionStudent++
+        UnSubmittedName.push(
+            submissions[index].student
+        )
+    }
+    if(submissions[index].score >=75){
+        countPassedStudent++
+    }else{
+        countFailedStudent++
+        revisionName.push(
+            submissions[index].student
+        )
+    }
+    /**increment total acore */
+    totalScore+= submissions[index].score
+}
+/**display report */
+console.log(`Submitedd Student: $(countSubmittedStudent)`);
+console.log(`UnSubmitedd Student: $(countUnSubmittedStudent)`);
+console.log(`Passed Student: $(countPassedStudent)`);
+console.log(`Failed Student: $(countFailedStudent)`);
+console.log(`Average Score: $(totalScore / countOfStudent)`);
+
+console.log(`student who not submit assigment`);
+console.log(UnSubmittedName);
+
+console.log(`studnet who need revise`);
+console.log(revisionName);
